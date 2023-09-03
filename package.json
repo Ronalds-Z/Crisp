@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "sass": "^1.66.1",
+    "@vituum/vite-plugin-twig": "^1.0.0",
     "vituum": "^1.0.0"
   }
 }
