@@ -1,0 +1,35 @@
+.products-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .products-sorter {
+        padding-right: 20.8rem;
+        display: flex;
+        flex-direction: column;
+        span{
+            font-size: 1.5rem;
+            line-height: 4.25rem;
+        }
+        label{
+            font-family: Roboto;
+            font-size: 0.875rem;
+            line-height: 4.25rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .product-card-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 0.063rem solid #C4C4C4;
+        padding-left: 1.87rem;
+    }
+
+    .product-card {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.62rem;
+        row-gap: 2.7rem;
+    }
+}

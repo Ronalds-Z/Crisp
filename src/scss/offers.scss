@@ -1,0 +1,23 @@
+.offers {
+    display: flex;
+    padding-bottom: 1.87rem;
+
+    .offer1 {
+        background-image: url(images/offer1.png);
+        width: 28rem;
+        height: 27.125rem;
+
+    }
+
+    .offer2 {
+        background-image: url(images/offer2.png);
+        width: 34.8125rem;
+        height: 27.125rem;
+    }
+
+    .offer3 {
+        background-image: url(images/offer3.png);
+        width: 52.4375rem;
+        height: 56.125rem;
+    }
+}

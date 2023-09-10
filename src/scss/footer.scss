@@ -1,0 +1,13 @@
+.footer{
+    background: #000;
+    text-transform: uppercase;
+    color: #fff;
+    .container{
+        padding-top: 4.06rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo svg{
+            width: 6.2rem;
+    }
+}

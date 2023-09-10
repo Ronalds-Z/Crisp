@@ -1,0 +1,11 @@
+.shop-btn {
+    display: inline-block;
+    color: #000;
+    font-size: 1.125rem;
+    letter-spacing: 0.031rem;
+    line-height: 1;
+    border: 0.125rem solid #000;
+    padding: 1rem 2.8rem;
+    text-transform: uppercase;
+    width: fit-content;
+}

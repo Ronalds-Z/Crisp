@@ -1,0 +1,21 @@
+.banner {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 1.31rem;
+
+    .main-heading {
+        padding: 12.75rem 0 12.75rem 14.62rem;
+        font-weight: 600;
+        line-height: 6rem;
+        text-transform: uppercase;
+        max-width: 47rem;
+        font-size: 2.8rem;
+
+        h1 {
+            padding-bottom: 1rem;
+        }
+    }
+}

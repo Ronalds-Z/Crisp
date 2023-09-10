@@ -1,0 +1,18 @@
+.benefits {
+    background: #E6F1FA;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.875rem;
+
+    svg {
+        width: 1.875rem;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 0.87rem;
+    }
+}

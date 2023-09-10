@@ -1,0 +1,38 @@
+.article {
+    max-width: 27.9375rem;
+    padding: 1.51rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+    .article-type {
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #BDBDBD;
+        padding-bottom: 0.7rem;
+    }
+
+    .article-heading {
+        font-size: 1.625rem;
+        text-transform: capitalize;
+        padding-bottom: 1.5rem;
+    }
+
+    .article-text {
+        letter-spacing: 0.01rem;
+        line-height: 1.5rem;
+        font-family: Roboto;
+        font-weight: 300;
+    }
+
+    .article-credits {
+        margin-top: 5rem;
+        color: #4F4F4F;
+        font-size: 0.8125rem;
+        font-weight: 300;
+        line-height: 2.3125rem;
+        border-top: 0.25rem solid #4F4F4F;
+    }
+
+}

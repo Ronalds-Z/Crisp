@@ -1,0 +1,21 @@
+.blog-wrapper {
+    background: #F8F9FB;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.31rem;
+
+    .container {
+        padding: 0;
+    }
+
+    .blog {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        line-height: 4.4rem;
+    }
+}
