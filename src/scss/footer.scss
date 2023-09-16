@@ -1,13 +1,104 @@
-.footer{
+.footer {
     background: #000;
     text-transform: uppercase;
     color: #fff;
-    .container{
-        padding-top: 4.06rem;
+
+    .footer-links {
+        padding: 4rem 0 5.5rem 0;
         display: flex;
         justify-content: space-between;
-    }
-    .logo svg{
+        .logo svg {
             width: 6.2rem;
+        }
+
+        span {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            padding-top: 1rem;
+
+            a {
+                color: #828282;
+                font-size: 0.8125rem;
+                line-height: 1.6875rem;
+                font-family: roboto;
+            }
+        }
+
+        .contact-us {
+            li {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-weight: 500;
+                }
+
+                span,
+                a {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .follow-us {
+            a {
+                line-height: 2.875rem;
+                display: flex;
+                text-align: center;
+
+                svg {
+                    width: 1.313rem;
+                    margin-right: 1.17rem;
+                }
+            }
+
+        }
+
+        .subscribe {
+            padding-top: 1.88rem;
+            display: flex;
+            flex-direction: column;
+
+            label,
+            input {
+                font-family: Roboto;
+            }
+
+            label {
+                color: #828282;
+                font-size: 0.8125rem;
+                line-height: 2.2rem;
+            }
+
+            input {
+                padding: 0.7rem 0.95rem;
+                margin-bottom: 0.44rem;
+                background: #000;
+                font-size: 0.75rem;
+                color: #fff;
+            }
+
+            .email-btn {
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                padding: 0.5rem 6.7rem;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .credits {
+        border-top: 0.063rem solid #4f4f4f;
+        display: block;
+        padding: 0.87rem 0 2.5rem 0;
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.6875rem;
     }
 }

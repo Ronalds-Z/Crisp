@@ -1,21 +1,19 @@
-.blog-wrapper {
-    background: #F8F9FB;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 1.31rem;
+  .blog-wrapper {
+      background: #F8F9FB;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 1.31rem 1.3rem 1.31rem;
+      margin: 0 -1.31rem;
 
-    .container {
-        padding: 0;
-    }
+      .blog {
+          display: flex;
+          justify-content: space-between;
+      }
 
-    .blog {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    h2 {
-        text-transform: capitalize;
-        font-size: 1.5rem;
-        line-height: 4.4rem;
-    }
-}
+      h2 {
+          font-weight: normal;
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          line-height: 4.4rem;
+      }
+  }
