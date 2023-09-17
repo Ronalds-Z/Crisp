@@ -1,0 +1,41 @@
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 1.31rem;
+
+
+    .main-heading {
+        padding: 12.75rem 0 12.75rem 14.62rem;
+        font-weight: 600;
+        line-height: 6rem;
+        text-transform: uppercase;
+        max-width: 47rem;
+        font-size: 2.8rem;
+
+        h1 {
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    padding: 1.5rem;
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: none;
+        border: 0.063rem solid #828282;
+        transition: 0.3s all;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000;
+        transform: scale(1.2);
+        border-color: #000;
+    }
+}

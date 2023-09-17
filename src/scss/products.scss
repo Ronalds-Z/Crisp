@@ -28,6 +28,7 @@
         border-left: 0.063rem solid #C4C4C4;
         padding-left: 1.87rem;
         flex: 1;
+        margin-bottom: 1.5rem;
 
         .product-card {
             display: flex;
@@ -38,7 +39,7 @@
 
         .load-more {
             display: block;
-            margin: 3.7rem auto;
+            margin: 3.7rem auto 2.3rem;
             max-width: fit-content;
             border: 0.125rem solid #C4C4C4;
             padding: 0.8rem 2.2rem;
