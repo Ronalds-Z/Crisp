@@ -39,18 +39,18 @@ const appendFilter = (filterElement, filterWrap, brand,) => {
 }
 export const fetchFilter = async (filterElement, filterWrap) => {
     filterElement = filterWrap.removeChild(filterElement);
-    await fetch("https://random-data-api.com/api/v2/beers?size=10", {
+    await fetch("https://random-data-api.com/api/v2/beers?size=15", {
         method: "GET"
     })
         .then(response => response.json())
         .then(data => {
             if (filterElement && filterWrap) {
-                data.forEach(beer => {
-                    if (!uniqueBrands.has(beer.brand)) {
-                        appendFilter(filterElement, filterWrap, beer.brand);
-                        uniqueBrands.add(beer.brand);
-                    }
-                });
+                    data.forEach(beer => {
+                        if (!uniqueBrands.has(beer.brand)) {
+                            appendFilter(filterElement, filterWrap, beer.brand);
+                            uniqueBrands.add(beer.brand);
+                        }
+                    });
             }
         });
 }

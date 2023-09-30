@@ -40,6 +40,9 @@ const loadMoreButton = document.querySelector(".products-wrapper .load-more");
 if (loadMoreButton) {
     loadMoreButton.addEventListener("click", async () => {
         countMain = await fetchProducts(productCard, productElement, countMain, request1);
+        const newProducts = document.querySelectorAll(".product");
+        sortProductElements = [...sortProductElements, ...newProducts];
+        filterProducts();
     });
 }
 
@@ -57,9 +60,7 @@ const filterWrap = document.querySelector(".filters-wrap");
 const filterElement = document.querySelector(".filters");
 await fetchFilter(filterElement, filterWrap);
 
-// const sortFilterElements = document.querySelectorAll(".filters");
-
-const sortProductElements = document.querySelectorAll(".products-wrapper .product");
+let sortProductElements = document.querySelectorAll(".products-wrapper .product");
 const filterChecks = document.querySelectorAll(".filters input");
 const selectedFilters = [];
 
@@ -74,17 +75,17 @@ filterChecks.forEach((filterCheck) => {
                 selectedFilters.splice(index, 1);
             }
         }
-
-        sortProductElements.forEach((productElement) => {
-            const productBrandElement = productElement.querySelector(".brand").innerText;
-            if (!selectedFilters.length || selectedFilters.includes(productBrandElement.toLowerCase())) {
-                productElement.style.display = '';
-            }
-            else {
-                productElement.style.display = 'none';
-            }
-
-        });
+        filterProducts();
     });
 });
-
+function filterProducts() {
+    sortProductElements.forEach((productElement) => {
+        const productBrandElement = productElement.querySelector(".brand").innerText;
+        if (!selectedFilters.length || selectedFilters.includes(productBrandElement.toLowerCase())) {
+            productElement.style.display = '';
+        }
+        else {
+            productElement.style.display = 'none';
+        }
+    });
+}
