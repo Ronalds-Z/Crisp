@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
+        
     <title>Crisp</title>
 </head>
 
@@ -108,28 +109,15 @@
             <div class="products-wrapper">
                 <div class="products-sorter">
                     <span>Shop Some Wear:</span>
-                    <div class="best-sellers-checkbox checkbox">
-                        <input type="checkbox">
-                        <label for="best-sellers">best sellers</label>
-                    </div>
-                    <div class="new-arivals-checkbox checkbox">
-                        <input type="checkbox">
-                        <label for="new-arivals-checkbox">new arivals</label>
-                    </div>
-                    <div class="top-beer-checkbox checkbox">
-                        <input type="checkbox">
-                        <label for="top-beer-checkbox">top beer</label>
+                    <div class="filters-wrap">
+                        <div class="filters">
+                            <input type="checkbox" value="" id="">
+                            <label for=""></label>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card-wrap">
                     <div class="product-card">
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
                         {% include "/components/product-card.twig" %}
                     </div>
                     <button class="load-more">load more</button>
@@ -155,22 +143,14 @@
             <div class="specials-wrapper">
                 <div class="featured">
                     <h3>Featured Items</h3>
-                    <div class="product-card">
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                        </div>
                     </div>
                 </div>
                 <div class="most-popular">
                     <h3>Most Popular</h3>
                     <div class="product-card">
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
-                        {% include "/components/product-card.twig" %}
                     </div>
                 </div>
             </div>
