@@ -3,13 +3,14 @@
     padding: 1.51rem;
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: $color-white;
+    color: $color-black;
 
     .article-type {
         font-size: 1.125rem;
         font-weight: 600;
         text-transform: uppercase;
-        color: #BDBDBD;
+        color: $color-light-gray;
         padding-bottom: 0.7rem;
     }
 
@@ -21,18 +22,18 @@
 
     .article-text {
         letter-spacing: 0.01rem;
-        line-height: 1.5rem;
+        line-height: 1.5;
         font-family: Roboto;
         font-weight: 300;
     }
 
     .article-credits {
         margin-top: 5rem;
-        color: #4F4F4F;
+        color: $color-gray;
         font-size: 0.8125rem;
         font-weight: 300;
-        line-height: 2.3125rem;
-        border-top: 0.25rem solid #4F4F4F;
+        line-height: 2.3125;
+        border-top: 0.25rem solid $color-gray;
     }
 
 }

@@ -1,14 +1,14 @@
 .footer {
-    background: #000;
+    background: $color-black;
     text-transform: uppercase;
-    color: #fff;
+    color: $color-white;
 
     .footer-links {
         padding: 4rem 0 5.5rem 0;
         display: flex;
         justify-content: space-between;
         .logo svg {
-            width: 6.2rem;
+            max-width: 6.2rem;
         }
 
         span {
@@ -22,9 +22,9 @@
             padding-top: 1rem;
 
             a {
-                color: #828282;
+                color: $color-medium-grey;
                 font-size: 0.8125rem;
-                line-height: 1.6875rem;
+                line-height: 1.9;
                 font-family: Roboto;
             }
         }
@@ -33,6 +33,7 @@
             li {
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 0.4rem;
 
                 span {
                     font-weight: 500;
@@ -47,12 +48,12 @@
 
         .follow-us {
             a {
-                line-height: 2.875rem;
+                line-height: 3.5;
                 display: flex;
                 text-align: center;
 
                 svg {
-                    width: 1.313rem;
+                    max-width: 1.313rem;
                     margin-right: 1.17rem;
                 }
             }
@@ -70,17 +71,17 @@
             }
 
             label {
-                color: #828282;
+                color: $color-medium-grey;
                 font-size: 0.8125rem;
-                line-height: 2.2rem;
+                line-height: 2.7;
             }
 
             input {
                 padding: 0.7rem 0.95rem;
                 margin-bottom: 0.44rem;
-                background: #000;
+                background: $color-black;
                 font-size: 0.75rem;
-                color: #fff;
+                color: $color-white;
             }
 
             .email-btn {
@@ -95,10 +96,9 @@
     .credits {
         border-top: 0.0625rem solid #4f4f4f;
         display: block;
-        padding: 0.87rem 0 2.5rem 0;
+        padding: 1.5rem 0 2.5rem 0;
         font-family: Roboto;
         font-size: 0.75rem;
         font-weight: 700;
-        line-height: 1.6875rem;
     }
 }

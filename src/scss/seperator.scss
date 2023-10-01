@@ -1,5 +1,5 @@
 .seperator {
-    background-image: url(/images/seperator1.png);
+    background-image: url(/images/seperator1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,13 +14,13 @@
         h2 {
             font-size: 3.5rem;
             font-weight: 700;
-            line-height: 4.5rem;
-            padding: 1.5rem 0 1.06rem 0;
+            line-height: 1;
+            padding: 1.5rem 0 1.7rem 0;
             position: relative;
 
             svg {
                 position: absolute;
-                width: 37.688rem;
+                max-width: 37.688rem;
                 inset: 5%;
             }
         }
@@ -29,9 +29,10 @@
             font-family: Roboto;
             font-size: 1.5625rem;
             font-weight: 300;
-            line-height: 2.3125rem;
+            line-height: 1.5;
             letter-spacing: 0.01563rem;
             padding-bottom: 2.3rem;
+            max-width: 40rem;
         }
     }
 }

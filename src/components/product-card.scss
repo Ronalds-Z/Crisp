@@ -15,7 +15,7 @@
         }
     
         .brand {
-            color: #BDBDBD;
+            color: $color-light-gray;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -24,7 +24,7 @@
     
     
         .name {
-            color: #000;
+            color: $color-black;
             font-size: 1.125rem;
             font-weight: 300;
         }

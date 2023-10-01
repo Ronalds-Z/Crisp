@@ -24,13 +24,18 @@ body {
     a {
         text-decoration: none;
     }
-    button{
+
+    button {
         font-family: Oswald;
     }
 
     img {
         height: auto;
         max-width: 100%;
+    }
+
+    svg {
+        width: 100%;
     }
 
     .container {

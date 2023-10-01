@@ -9,21 +9,21 @@
 
         span {
             font-size: 1.5rem;
-            line-height: 3.8rem;
+            line-height: 2.5;
         }
 
         .filters {
             font-family: Roboto;
             font-size: 0.875rem;
-            line-height: 2.7rem;
+            line-height: 3;
             text-transform: uppercase;
             display: flex;
             align-items: center;
 
             input[type="checkbox"] {
                 appearance: none;
-                background-color: #fff;
-                border: 0.062rem solid #828282;
+                background-color: $color-white;
+                border: 0.0625rem solid $color-medium-grey;
                 padding: 0.25rem;
                 height: 0.625rem;
                 position: relative;
@@ -31,13 +31,13 @@
             }
 
             input[type="checkbox"]:checked {
-                background-color: #000;
+                background-color: $color-black;
             }
 
 
             input[type="checkbox"]::before {
                 content: "\2713";
-                color: #fff;
+                color: $color-white;
                 position: absolute;
                 font-size: 0.563rem;
                 top: 50%;
@@ -55,7 +55,7 @@
     }
 
     .product-card-wrap {
-        border-left: 0.0625rem solid #C4C4C4;
+        border-left: 0.0625rem solid $border-light;
         padding-left: 1.87rem;
         flex: 1;
         margin-bottom: 1.5rem;
@@ -64,9 +64,9 @@
             display: block;
             margin: 3.7rem auto 2.3rem;
             max-width: fit-content;
-            border: 0.125rem solid #C4C4C4;
+            border: 0.125rem solid $border-light;
             padding: 0.8rem 2.2rem;
-            color: #828282;
+            color: $color-medium-grey;
             background-color: white;
             font-size: 0.875rem;
             font-weight: 500;

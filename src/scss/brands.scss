@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 3.2rem;
+    padding-top: 0.5rem;
 
     span {
         font-size: 1.5rem;
-        line-height: 4rem;
+        line-height: 2.6;
         text-transform: uppercase;
     }
 
@@ -14,20 +15,26 @@
         display: flex;
         gap: 2.2rem;
 
-        a {
-            width: 14.69rem;
+        svg {
+            max-width: 14.69rem;
             transition: 0.3s background-color;
         }
 
-        a:hover {
+        svg:hover {
             background-color: #F0F2F2;
         }
     }
 }
+
 .brand-border {
-    width: 117.375rem;
+    width: 100%;
     z-index: -1;
     position: absolute;
     display: flex;
     padding-top: 2rem;
+    justify-content: center;
+
+    svg {
+        max-width: 117.375rem;
+    }
 }
