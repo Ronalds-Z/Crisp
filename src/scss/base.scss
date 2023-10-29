@@ -43,6 +43,18 @@ body {
         margin: 0 auto;
         height: 100%;
         max-width: 120rem;
-        padding: 0 1.31rem;
+        padding: 0 0.87rem;
+
+        @media(min-width: 75rem) {
+            padding: 0 1.31rem;
+        }
+    }
+
+    main .container .swiper {
+        margin: 0 -0.87rem;
+
+        @media(min-width: 75rem) {
+            margin: 0;
+        }
     }
 }

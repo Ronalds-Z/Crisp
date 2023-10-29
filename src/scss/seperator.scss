@@ -3,36 +3,59 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 2.6rem;
+
+    @media(min-width:75rem) {
+        margin-bottom: 2.6rem;
+    }
 
     .seperator-text {
         background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0.00) 100%);
-        max-width: 50%;
-        padding: 4.81rem 0 4.87rem 16.81rem;
+        max-width: 75%;
+        padding: 1.06rem 0 1rem 1.44rem;
 
+        @media(min-width:75rem) {
+            padding: 4.81rem 0 4.87rem 16.81rem;
+            max-width: 50%;
+            position: relative;
+        }
 
         h2 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1;
-            padding: 1.5rem 0 1.7rem 0;
-            position: relative;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.1875rem;
 
-            svg {
+            @media(min-width:75rem) {
+                font-weight: 700;
+                font-size: 3.5rem;
+                line-height: 1;
+                padding: 1.5rem 0 1.7rem 0;
+            }
+        }
+
+        svg {
+            display: none;
+
+            @media(min-width: 75rem) {
+                display: inline;
                 position: absolute;
                 max-width: 37.688rem;
-                inset: 5%;
+                inset: 15% 33%;
             }
         }
 
         p {
             font-family: Roboto;
-            font-size: 1.5625rem;
+            font-size: 0.625rem;
             font-weight: 300;
             line-height: 1.5;
             letter-spacing: 0.01563rem;
-            padding-bottom: 2.3rem;
+            padding-bottom: 0.54rem;
             max-width: 40rem;
+
+            @media(min-width: 75rem) {
+                padding-bottom: 2.3rem;
+                font-size: 1.5625rem;
+            }
         }
     }
 }

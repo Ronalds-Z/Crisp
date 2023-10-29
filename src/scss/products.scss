@@ -1,24 +1,40 @@
 .products-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @media(min-width:75rem) {
+        flex-direction: row;
+    }
 
     .products-sorter {
+        display: flex;
+        flex-direction: column;
         max-width: 24.5rem;
         flex: 1;
         flex-wrap: wrap;
 
         span {
-            font-size: 1.5rem;
-            line-height: 2.5;
+            font-size: 1.125rem;
+            line-height: 3;
+
+            @media(min-width: 75rem) {
+                font-size: 1.5rem;
+                line-height: 2.5;
+            }
         }
 
         .filters {
-            font-family: Roboto;
-            font-size: 0.875rem;
-            line-height: 3;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
+            display: none;
+
+            @media(min-width:75rem) {
+                font-family: Roboto;
+                font-size: 0.875rem;
+                line-height: 3;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+            }
 
             input[type="checkbox"] {
                 appearance: none;
@@ -55,17 +71,25 @@
     }
 
     .product-card-wrap {
-        border-left: 0.0625rem solid $border-light;
-        padding-left: 1.87rem;
-        flex: 1;
-        margin-bottom: 1.5rem;
+
+        @media(min-width:75rem) {
+            border-left: 0.0625rem solid $border-light;
+            flex: 1;
+            margin-bottom: 1.5rem;
+            padding-left: 1.87rem;
+        }
+
+        .product-card {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
         .load-more {
             display: block;
-            margin: 3.7rem auto 2.3rem;
+            margin: 1.8rem auto 1.1rem;
             max-width: fit-content;
             border: 0.125rem solid $border-light;
-            padding: 0.8rem 2.2rem;
+            padding: 0.3rem 2.2rem;
             color: $color-medium-grey;
             background-color: white;
             font-size: 0.875rem;
@@ -73,6 +97,11 @@
             letter-spacing: 0.03125rem;
             text-transform: uppercase;
             cursor: pointer;
+
+            @media(min-width: 75rem) {
+                padding: 0.8rem 2.2rem;
+                margin: 3.7rem auto 2.3rem;
+            }
         }
     }
 
