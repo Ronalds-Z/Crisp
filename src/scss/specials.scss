@@ -1,0 +1,27 @@
+.specials-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    padding-bottom: 1.5rem;
+
+    .featured,
+    .most-popular {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 1.125rem;
+            line-height: 3;
+
+            @media(min-width: 75rem) {
+                line-height: 4;
+                font-size: 1.5rem;
+            }
+        }
+
+        .product-card {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

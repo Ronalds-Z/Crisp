@@ -1,0 +1,69 @@
+.brand-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    span {
+        display: none;
+    }
+
+    @media(min-width: 75rem) {
+        padding-bottom: 3.2rem;
+
+        span {
+            display: flex;
+            font-size: 1.5rem;
+            line-height: 2.6;
+            text-transform: uppercase;
+        }
+    }
+
+    .brands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.88rem;
+        row-gap: 0.3rem;
+
+        svg {
+            aspect-ratio: 2.5;
+            max-width: 8.6rem;
+            transition: 0.3s background-color;
+            border: 0.125rem solid $border-light;
+
+            &:hover {
+                background-color: #F0F2F2;
+            }
+        }
+
+
+        @media(min-width: 75rem) {
+            display: flex;
+            gap: 2.2rem;
+
+            svg {
+                border: none;
+                aspect-ratio: 1.7;
+                max-width: 14.69rem;
+            }
+        }
+    }
+}
+
+.brand-border {
+    display: none;
+
+    @media(min-width: 75rem) {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        display: flex;
+        padding-top: 2rem;
+        justify-content: center;
+
+        svg {
+            max-width: 117.375rem;
+        }
+    }
+}

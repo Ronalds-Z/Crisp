@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Oswald;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    p {
+        margin: 0;
+    }
+
+    h1,
+    h2 {
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        font-family: Oswald;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    svg {
+        width: 100%;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+        max-width: 120rem;
+        padding: 0 0.87rem;
+
+        @media(min-width: 75rem) {
+            padding: 0 1.31rem;
+        }
+    }
+
+    main .container .swiper {
+        margin: 0 -0.87rem;
+
+        @media(min-width: 75rem) {
+            margin: 0;
+        }
+    }
+}

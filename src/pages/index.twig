@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <title>Crisp</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="links">
+                <button class="burger-menu">
+                    {{ source('icons\burger-menu.svg') }}
+                </button>
+                <div class="logo">
+                    <a href="index.twig">
+                        {{ source('icons\logo.svg') }}
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Type something...">
+                        <button class="search-btn">find</button>
+                    </div>
+                    <a href="#">
+                        <span>home</span>
+                        {{ source('icons\chevron-right.svg') }}
+                    </a>
+                    <a href="#">
+                        <span>shop</span>
+                        {{ source('icons\chevron-right.svg') }}
+                    </a>
+                    <a href="#">
+                        <span>blog</span>
+                        {{ source('icons\chevron-right.svg') }}
+                    </a>
+                    <a href="#">
+                        <span>sale</span>
+                        {{ source('icons\chevron-right.svg') }}
+                    </a>
+                    <a href="#">
+                        <span>contact us</span>
+                        {{ source('icons\chevron-right.svg') }}
+                    </a>
+                    <a href="#" class="search">
+                        <div class="search-icon">
+                            {{ source('icons\search-icon.svg') }}
+                        </div>
+                        <span>search</span>
+                    </a>
+                </nav>
+                <div class="account">
+                    <a href="#">sign in</a>
+                    <a href="#">create an account</a>
+                    <a href="#" class="favorites">
+                        {{ source('icons\heart.svg') }}
+                    </a>
+                    <a href="#" class="cart">
+                        {{ source('icons\shopping-bag.svg') }}
+                        <div class="cart-text">
+                            <span class="cart-title">Shopping cart</span>
+                            <span class="cart-price">0,00 EUR</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            {% include "/components/swiper.twig" %}
+            <div class="brand-wrap">
+                <div class="brand-border">
+                    {{ source('icons\brand-border.svg') }}
+                </div>
+                <span>choose your brand</span>
+                <div class="brands">
+                    {% include "/components\brands.twig" %}
+                </div>
+            </div>
+            <div class="offers">
+                <div class="offer-left">
+                    <div class="offer1">
+                        <div class="offer-text">
+                            <h2>choosе your look</h2>
+                            <span>See our clothing collections</span>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="offer2">
+                        <div class="offer-text">
+                            <h2>brand new style</h2>
+                            <span>Popular clothing brands</span>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer3">
+                    <div class="offer-text">
+                        <h2>Up to 40% off</h2>
+                        <span>Special offers and great deals</span>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-wrapper">
+                <div class="products-sorter">
+                    <span>Shop Some Wear:</span>
+                    <div class="filters-wrap">
+                        <div class="filters">
+                            <input type="checkbox" value="" id="">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrap">
+                    <div class="product-card">
+                        {% include "/components/product-card.twig" %}
+                    </div>
+                    <button class="load-more">load more</button>
+                </div>
+            </div>
+            <div class="seperator">
+                <div class="seperator-text">
+                    {{ source('icons\seperator-border.svg') }}
+                    <h2>
+                        shoping without limits.
+                    </h2>
+                    <p>
+                        You can choose the best option for you, and it does not matter whether you are in Prague or
+                        San
+                        Francisco. We will deliver your purchase anywhere!
+                    </p>
+                    <a href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+            <div class="specials-wrapper">
+                <div class="featured">
+                    <h3>Featured Items</h3>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                        </div>
+                    </div>
+                </div>
+                <div class="most-popular">
+                    <h3>Most Popular</h3>
+                    <div class="product-card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="seperator2">
+                <img src="/images/seperator2.webp" width="1060" height="363" loading="lazy">
+                <div class="seperator2-text">
+                    <h2>
+                        {{ source('icons\seperator-border.svg') }}
+                        Explore the best of you.
+                    </h2>
+                    <p>You can choose the best option for you, and it does not matter whether you are in
+                        Prague or San
+                        Francisco.</p>
+                    <a href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+            <div class="blog-wrapper">
+                <h2>Blog</h2>
+                <div class="blog">
+                    {% include "/components/articles.twig" %}
+                </div>
+            </div>
+            <div class="benefits">
+                <p>
+                    <span>
+                        {{ source('icons\checkmark.svg') }}
+                    </span>
+                    Duties and Taxes Guaranteed
+                </p>
+                <p>
+                    <span>
+                        {{ source('icons\checkmark.svg') }}
+                    </span>
+                    Free Express Shipping
+                </p>
+                <p>
+                    <span>
+                        {{ source('icons\checkmark.svg') }}
+                    </span>
+                    Customer Love
+                </p>
+                <p>
+                    <span>
+                        {{ source('icons\checkmark.svg') }}
+                    </span>
+                    Easy Returns
+                </p>
+                <p>
+                    <span>
+                        {{ source('icons\checkmark.svg') }}
+                    </span>
+                    Secure Payment
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html" class="logo">
+                    {{ source('icons\logo.svg') }}
+                </a>
+                <div class="features">
+                    <button class="footer-menu">
+                        <span>features</span>
+                        {{ source('icons\cross.svg') }}
+                    </button>
+                    <ul class="footer-text">
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">boys</a></li>
+                        <li><a href="#">girls</a></li>
+                        <li><a href="#">new arrivals</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">clothes</a></li>
+                        <li><a href="#">accessories</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <button class="footer-menu">
+                        <span>menu</span>
+                        {{ source('icons\cross.svg') }}
+                    </button>
+                    <ul class="footer-text">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">my account</a></li>
+                        <li><a href="#">orders history</a></li>
+                        <li><a href="#">MY WISHLIST</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <button class="footer-menu">
+                        <span>contact-us</span>
+                        {{ source('icons\cross.svg') }}
+                    </button>
+                    <ul class="footer-text">
+                        <li>
+                            <span>Address:</span>
+                            <a href="#">123 STREET NAME, CITY, ENGLAND</a>
+                        </li>
+                        <li>
+                            <span>Phone:</span>
+                            <a href="tel:">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <span>email:</span>
+                            <a href="mailto:">MAIL@EXAMPLE.COM</a>
+                        </li>
+                        <li>
+                            <span>working days/hours</span>
+                            <a href="#">MON - SUN / 9:00AM - 8:00PM</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <button class="footer-menu">
+                        <span>follow us</span>
+                        {{ source('icons\cross.svg') }}
+                    </button>
+                    <ul class="footer-text">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                {{ source('icons\facebook.svg') }}
+                                facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target="_blank">
+                                {{ source('icons\twitter.svg') }}
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                {{ source('icons\instagram.svg') }}
+                                instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join-us">
+                    <span>join us</span>
+                    <div class="subscribe">
+                        <label for="email">Subscribe to our newsletters</label>
+                        <input type="email" class="email" name="email" placeholder="Email Adress">
+                        <button class="email-btn">subscribe!</button>
+                    </div>
+                </div>
+            </div>
+            <span class="credits">© 2019. Crisp theme Developed by Belvg</span>
+        </div>
+    </footer>
+    <script src="/src/main.js" type="module"></script>
+</body>
+
+</html>

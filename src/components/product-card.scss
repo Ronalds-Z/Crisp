@@ -1,0 +1,69 @@
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.88rem;
+    row-gap: 1.3rem;
+
+    @media(min-width:75rem) {
+        column-gap: 1.62rem;
+        row-gap: 2.7rem;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        max-width: 8.6875rem;
+
+        .brand,
+        .name,
+        .price {
+            width: fit-content;
+        }
+
+        .product-image {
+            max-width: 8.6875rem;
+        }
+
+        .brand {
+            color: $color-light-gray;
+            font-size: 0.625rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+
+        .name {
+            color: $color-black;
+            font-size: 0.75rem;
+            font-weight: 300;
+        }
+
+        .price {
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding-top: 0.6rem;
+        }
+
+        @media(min-width: 75rem) {
+            max-width: 21.5rem;
+
+            .product-image {
+                max-width: 21.5rem;
+            }
+
+            .brand {
+                font-size: 0.75rem;
+                padding-top: 0.87rem;
+            }
+
+            .name {
+                font-size: 1.125rem;
+            }
+
+            .price {
+                font-size: 1.375rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,146 @@
+.offers {
+    display: flex;
+
+    gap: 0.75rem;
+    flex-direction: column;
+
+    @media(min-width:75rem) {
+        gap: 1.88rem;
+        flex-direction: row;
+        padding-bottom: 1.87rem;
+    }
+
+    span {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 0.625rem;
+    }
+
+    h2 {
+        line-height: 1.15;
+    }
+
+    .shop-btn {
+        margin-top: 0.3rem;
+
+        @media(min-width:75rem) {
+            margin-top: 3.19rem;
+        }
+    }
+
+    .offer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 0.625rem;
+            line-height: 2.4;
+            letter-spacing: 0.01375rem;
+        }
+
+        @media(min-width:75rem) {
+            width: 50%;
+            gap: 1.88rem;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            span {
+                font-size: 1.375rem;
+            }
+        }
+
+        .offer1 {
+            background-image: url(/images/offer1.webp);
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+
+            .offer-text {
+                display: flex;
+                flex-direction: column;
+                padding: 1.2rem;
+
+                h2 {
+                    max-width: 6rem;
+                }
+
+                @media(min-width:75rem) {
+                    padding: 6rem 10.2rem 5rem 0;
+
+                    h2 {
+                        max-width: 15rem;
+                    }
+                }
+            }
+
+        }
+
+        .offer2 {
+            background-image: url(/images/offer2.webp);
+            background-size: cover;
+
+
+            .offer-text {
+                display: flex;
+                flex-direction: column;
+                padding: 1.8rem 0rem 1.7rem 2.1rem;
+
+                @media(min-width: 75rem) {
+                    padding: 7.4rem 0rem 6.5rem 6rem;
+                }
+            }
+        }
+
+    }
+
+    .offer3 {
+        background-image: url(/images/offer3.webp);
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        min-height: 17.75rem;
+
+        .offer-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            padding: 0rem 0 2.2rem 1.7rem;
+
+            h2 {
+                font-size: 1.625rem;
+                max-width: 7rem;
+            }
+
+            span {
+                line-height: 1.9;
+                letter-spacing: 0.01563rem;
+            }
+        }
+
+        @media(min-width:75rem) {
+            width: 50%;
+
+            .offer-text {
+                padding: 6rem 5.37rem;
+                max-width: 36rem;
+
+                h2 {
+                    font-size: 6rem;
+                    max-width: 36rem;
+                }
+
+                span {
+                    font-size: 1.5625rem;
+                }
+            }
+        }
+    }
+
+}

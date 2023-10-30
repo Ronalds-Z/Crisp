@@ -1,0 +1,37 @@
+  .blog-wrapper {
+      background: #F8F9FB;
+      display: flex;
+      flex-direction: column;
+      padding: 0rem 1.31rem 1.3rem 1.31rem;
+      margin: 1.31rem -1.31rem;
+
+      @media(min-width:75rem) {
+          margin: 0rem -1.31rem;
+          padding-top: 0.3rem;
+      }
+
+      h2 {
+          font-weight: normal;
+          text-transform: capitalize;
+          font-size: 1.125rem;
+          line-height: 2.5;
+
+          @media(min-width: 75rem) {
+              font-size: 1.5rem;
+              line-height: 3.7;
+          }
+      }
+
+      .blog {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.88rem;
+
+          @media(min-width: 75rem) {
+              flex-direction: row;
+              gap: 1.87rem;
+          }
+      }
+
+  }

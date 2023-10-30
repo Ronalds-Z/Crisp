@@ -1,0 +1,189 @@
+.footer {
+    background: $color-black;
+    text-transform: uppercase;
+    color: $color-white;
+
+    .footer-links {
+        padding: 1.69rem 0 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media(min-width:75rem) {
+            padding: 4rem 0 5.5rem 0;
+            flex-direction: row;
+        }
+
+        .logo {
+            display: flex;
+            align-self: center;
+            max-width: 6.2rem;
+
+            @media(min-width: 75rem) {
+                align-self: baseline;
+            }
+        }
+
+        .footer-menu {
+            background: none;
+            border: none;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border-bottom: 0.0625rem solid $color-gray;
+            user-select: auto;
+
+            @media(min-width: 75rem) {
+                border: none;
+                cursor: text;
+            }
+
+            svg {
+                width: 1.1875rem;
+                height: 1.125rem;
+
+                @media(min-width: 75rem) {
+                    display: none;
+                }
+            }
+
+        }
+
+        span {
+            color: $color-white;
+            display: flex;
+            gap: 1.4rem;
+            font-size: 0.875rem;
+            padding: 0.88rem 0;
+
+            @media(min-width: 75rem) {
+                padding: 0;
+                font-size: 1.125rem;
+                font-weight: 600;
+                gap: 0;
+            }
+        }
+
+        ul {
+            list-style: none;
+            max-height: 0;
+            transition: max-height 0.3s;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            @media(min-width:75rem) {
+                padding: 0;
+                padding-top: 1rem;
+                max-height: fit-content !important;
+            }
+
+            &.open-footer {
+                @media(min-width:75rem) {
+                    max-height: 0;
+                }
+            }
+
+            li {
+                @media(min-width: 75rem) {
+                    display: flex;
+                }
+            }
+
+            a {
+                color: $color-medium-grey;
+                font-size: 0.8125rem;
+                line-height: 1.9;
+                font-family: Roboto;
+            }
+        }
+
+        .contact-us {
+            li {
+                flex-direction: column;
+                padding-bottom: 0.4rem;
+
+                span {
+                    font-weight: 500;
+                }
+
+                span,
+                a {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .follow-us {
+            a {
+                line-height: 3.5;
+                text-align: center;
+
+                svg {
+                    max-width: 1.313rem;
+                    margin-right: 1.17rem;
+                }
+            }
+
+        }
+
+        .join-us {
+            span {
+                padding-bottom: 0.3rem;
+            }
+
+            .subscribe {
+                display: flex;
+                flex-direction: column;
+
+                @media(min-width:75rem) {
+                    padding-top: 1.88rem;
+                }
+
+                label,
+                input {
+                    font-family: Roboto;
+                }
+
+                label {
+                    color: $color-medium-grey;
+                    font-size: 0.6875rem;
+                    line-height: 2.7;
+
+                    @media(min-width: 75rem) {
+                        font-size: 0.8125rem;
+                    }
+                }
+
+                input {
+                    padding: 0.7rem 0.95rem;
+                    margin-bottom: 0.44rem;
+                    background: $color-black;
+                    font-size: 0.75rem;
+                    color: $color-white;
+                    border: 0.063rem solid $color-white;
+                    border-radius: 0;
+                }
+
+                .email-btn {
+                    font-size: 0.875rem;
+                    text-transform: uppercase;
+                    padding: 0.5rem 6.7rem;
+                    background-color: $color-white;
+                    color: #3F3F3F;
+                }
+            }
+        }
+    }
+
+    .credits {
+        border-top: 0.0625rem solid #4f4f4f;
+        display: block;
+        padding: 1.5rem 0 2.5rem 0;
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+}
