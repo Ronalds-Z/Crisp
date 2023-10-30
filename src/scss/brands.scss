@@ -24,28 +24,27 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 0.88rem;
-        row-gap: 0.3rem;
+        row-gap: 0.3125rem;
+        width: 100%;
+
+        @media(min-width: 75rem) {
+            display: flex;
+            gap: 2.2rem;
+        }
 
         svg {
             aspect-ratio: 2.5;
-            max-width: 8.6rem;
             transition: 0.3s background-color;
             border: 0.125rem solid $border-light;
 
             &:hover {
                 background-color: #F0F2F2;
             }
-        }
 
-
-        @media(min-width: 75rem) {
-            display: flex;
-            gap: 2.2rem;
-
-            svg {
+            @media(min-width: 75rem) {
                 border: none;
                 aspect-ratio: 1.7;
-                max-width: 14.69rem;
+                max-width: 100%;
             }
         }
     }
