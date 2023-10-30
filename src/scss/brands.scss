@@ -31,11 +31,12 @@
             max-width: 8.6rem;
             transition: 0.3s background-color;
             border: 0.125rem solid $border-light;
+
+            &:hover {
+                background-color: #F0F2F2;
+            }
         }
 
-        svg:hover {
-            background-color: #F0F2F2;
-        }
 
         @media(min-width: 75rem) {
             display: flex;
