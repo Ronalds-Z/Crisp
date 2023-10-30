@@ -1,27 +1,31 @@
 .product-card {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 0.88rem;
     row-gap: 1.3rem;
+    margin-left: -1.625rem;
 
     @media(min-width:75rem) {
-        column-gap: 1.62rem;
         row-gap: 2.7rem;
     }
 
     .product {
         display: flex;
         flex-direction: column;
-        max-width: 8.6875rem;
+        margin-left: 1.625rem;
+        width: calc(100%/2 - 1.625rem);
+
+        @media(min-width:75rem) {
+            width: calc(100%/4 - 1.625rem);
+        }
 
         .brand,
         .name,
         .price {
-            width: fit-content;
+            max-width: fit-content;
         }
 
         .product-image {
-            max-width: 8.6875rem;
+            width: 100%;
         }
 
         .brand {
@@ -45,11 +49,6 @@
         }
 
         @media(min-width: 75rem) {
-            max-width: 21.5rem;
-
-            .product-image {
-                max-width: 21.5rem;
-            }
 
             .brand {
                 font-size: 0.75rem;

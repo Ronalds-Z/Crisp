@@ -1,5 +1,5 @@
 .article {
-    width: 27.9375rem;
+    width: 100%;
     padding: 0.87rem;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,8 @@
     font-size: 0.625rem;
 
     @media(min-width:75rem) {
-        padding: 1.51rem;
+        width: calc(100%/4 - 1.41rem);
+        padding: 1.5rem;
     }
 
     .article-type {

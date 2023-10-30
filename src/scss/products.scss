@@ -79,17 +79,12 @@
             padding-left: 1.87rem;
         }
 
-        .product-card {
-            display: flex;
-            justify-content: center;
-        }
-
         .load-more {
             display: block;
             margin: 1.8rem auto 1.1rem;
             max-width: fit-content;
             border: 0.125rem solid $border-light;
-            padding: 0.3rem 2.2rem;
+            padding: 0.3125rem 2.2rem;
             color: $color-medium-grey;
             background-color: white;
             font-size: 0.875rem;
