@@ -1,11 +1,11 @@
 .product-card {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 1.3rem;
+    row-gap: 1.3125rem;
     margin-left: -1.625rem;
 
     @media(min-width:75rem) {
-        row-gap: 2.7rem;
+        row-gap: 2.6875rem;
     }
 
     .product {
@@ -45,14 +45,14 @@
         .price {
             font-size: 0.875rem;
             font-weight: 500;
-            padding-top: 0.6rem;
+            padding-top: 0.625rem;
         }
 
         @media(min-width: 75rem) {
 
             .brand {
                 font-size: 0.75rem;
-                padding-top: 0.87rem;
+                padding-top: 0.875rem;
             }
 
             .name {

@@ -10,7 +10,7 @@
     }
 
     @media(min-width: 75rem) {
-        padding-bottom: 3.2rem;
+        padding-bottom: 3.1875rem;
 
         span {
             display: flex;
@@ -23,13 +23,13 @@
     .brands {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 0.88rem;
+        column-gap: 0.875rem;
         row-gap: 0.3125rem;
         width: 100%;
 
         @media(min-width: 75rem) {
             display: flex;
-            gap: 2.2rem;
+            gap: 2.1875rem;
         }
 
         svg {

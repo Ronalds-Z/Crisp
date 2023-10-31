@@ -12,12 +12,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.56rem 0;
+        padding: 0.5625rem 0;
         text-transform: uppercase;
         font-size: 0.875rem;
 
         @media (min-width:75rem) {
-            padding: 2.10rem 0;
+            padding: 2.125rem 0;
         }
     }
 
