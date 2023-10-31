@@ -5,9 +5,9 @@
     flex-direction: column;
 
     @media(min-width:75rem) {
-        gap: 1.88rem;
+        gap: 1.875rem;
         flex-direction: row;
-        padding-bottom: 1.87rem;
+        padding-bottom: 1.875rem;
     }
 
     span {
@@ -24,7 +24,7 @@
         margin-top: 0.3125rem;
 
         @media(min-width:75rem) {
-            margin-top: 3.19rem;
+            margin-top: 3.1875rem;
         }
     }
 
@@ -45,7 +45,7 @@
 
         @media(min-width:75rem) {
             width: 50%;
-            gap: 1.88rem;
+            gap: 1.875rem;
 
             h2 {
                 font-size: 3rem;
@@ -65,14 +65,14 @@
             .offer-text {
                 display: flex;
                 flex-direction: column;
-                padding: 1.2rem;
+                padding: 1.25rem;
 
                 h2 {
                     max-width: 6rem;
                 }
 
                 @media(min-width:75rem) {
-                    padding: 6rem 10.2rem 5rem 0;
+                    padding: 6rem 10.25rem 5rem 0;
 
                     h2 {
                         max-width: 15rem;
@@ -90,10 +90,10 @@
             .offer-text {
                 display: flex;
                 flex-direction: column;
-                padding: 1.8rem 0rem 1.7rem 2.1rem;
+                padding: 1.8125rem 0rem 1.75rem 2.1rem;
 
                 @media(min-width: 75rem) {
-                    padding: 7.4rem 0rem 6.5rem 6rem;
+                    padding: 7.375rem 0rem 6.5rem 6rem;
                 }
             }
         }

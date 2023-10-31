@@ -4,7 +4,7 @@
     color: $color-white;
 
     .footer-links {
-        padding: 1.69rem 0 1.5rem 0;
+        padding: 1.6875rem 0 1.5rem 0;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -17,7 +17,7 @@
         .logo {
             display: flex;
             align-self: center;
-            max-width: 6.2rem;
+            max-width: 6.25rem;
 
             @media(min-width: 75rem) {
                 align-self: baseline;

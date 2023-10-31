@@ -5,16 +5,16 @@
     background-position: center;
 
     @media(min-width:75rem) {
-        margin-bottom: 2.6rem;
+        margin-bottom: 2.625rem;
     }
 
     .seperator-text {
         background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0.00) 100%);
         max-width: 75%;
-        padding: 1.06rem 0 1rem 1.44rem;
+        padding: 1.0625rem 0 1rem 1.4375rem;
 
         @media(min-width:75rem) {
-            padding: 4.81rem 0 4.87rem 16.81rem;
+            padding: 4.8125rem 0 4.875rem 16.8125rem;
             max-width: 50%;
             position: relative;
         }
@@ -28,7 +28,7 @@
                 font-weight: 700;
                 font-size: 3.5rem;
                 line-height: 1;
-                padding: 1.5rem 0 1.7rem 0;
+                padding: 1.5rem 0 1.6875rem 0;
             }
         }
 
@@ -38,7 +38,7 @@
             @media(min-width: 75rem) {
                 display: inline;
                 position: absolute;
-                max-width: 37.688rem;
+                max-width: 37.6875rem;
                 inset: 15% 33%;
             }
         }
@@ -49,11 +49,11 @@
             font-weight: 300;
             line-height: 1.5;
             letter-spacing: 0.01563rem;
-            padding-bottom: 0.54rem;
+            padding-bottom: 0.5625rem;
             max-width: 40rem;
 
             @media(min-width: 75rem) {
-                padding-bottom: 2.3rem;
+                padding-bottom: 2.3125rem;
                 font-size: 1.5625rem;
             }
         }
