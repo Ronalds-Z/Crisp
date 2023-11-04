@@ -33,6 +33,11 @@
             font-size: 0.625rem;
             font-weight: 600;
             text-transform: uppercase;
+
+            @media(min-width: 75rem) {
+                font-size: 0.75rem;
+                padding-top: 0.875rem;
+            }
         }
 
 
@@ -40,26 +45,18 @@
             color: $color-black;
             font-size: 0.75rem;
             font-weight: 300;
+
+            @media(min-width: 75rem) {
+                font-size: 1.125rem;
+            }
         }
 
         .price {
             font-size: 0.875rem;
             font-weight: 500;
             padding-top: 0.625rem;
-        }
 
-        @media(min-width: 75rem) {
-
-            .brand {
-                font-size: 0.75rem;
-                padding-top: 0.875rem;
-            }
-
-            .name {
-                font-size: 1.125rem;
-            }
-
-            .price {
+            @media(min-width: 75rem) {
                 font-size: 1.375rem;
             }
         }
