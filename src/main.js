@@ -46,7 +46,7 @@ const main = async () => {
     if (loadMoreButton) {
         loadMoreButton.addEventListener("click", async () => {
             count = await fetchProducts(productCard, productElement, count, request1);
-            const newProducts = document.querySelectorAll(".product");
+            const newProducts = document.querySelectorAll(".products-wrapper .product");
             sortProductElements = [...sortProductElements, ...newProducts];
             filterProducts();
         });
